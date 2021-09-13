@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+
+	<!-- <script src="script/gekke-dingen.js"></script> -->
+	<script src="script/dom.js"></script>
+
+</head>
+<body>
+
+	<button onclick="benchmark();">Voeg coin toe</button>
+
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Code</th>
+				<th>Crypto</th>
+				<th>Huidige waarde</th>
+				<th>Logo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<template id="coin-template">
+				<tr>
+					<td class="code"></td>
+					<td class="description"></td>
+					<td>$<span class="value"></span></td>
+					<td><img class="logo"></td>
+				</tr>
+			</template>
+			<tr>
+				<td>IOTA</td>
+				<td>IOTA</td>
+				<td>$1.38</td>
+				<td><img src="media/logo-iota.png"></td>
+			</tr>
+			<tr>
+				<td>ADA</td>
+				<td>Cardano</td>
+				<td>$2.39</td>
+				<td><img src="media/logo-cardano.png"></td>
+			</tr>
+			<tr>
+				<td>DGB</td>
+				<td>DigiByte</td>
+				<td>$0.05463</td>
+				<td><img src="media/logo-digibyte.png"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
