@@ -1,0 +1,64 @@
+
+
+selector {
+	property: value;
+}
+
+h2 {
+	font-size: 4rem;
+	color: green;
+}
+
+.special {
+	background-color: lightgray;
+}
+#content {
+	border: 10px solid purple;
+}
+
+
+body #dinges article h3 {
+	background: lightpink;
+}
+
+nav a {
+	background: lightblue;
+	padding: 7px;
+	display: block;
+	margin: 5px;
+	border: 3px dashed purple;
+	text-decoration: none;
+}
+nav a:hover { /* pseudo-class  */
+	background: purple;
+	border-color: lightblue;
+	color: white;
+}
+
+/* hyperlink pseudo-classes: :active :visited :link en :hover */
+
+
+
+
+/* css props:
+- background
+- -position
+- -color
+- -repeat
+- -
+
+- color
+- padding
+- border
+
+box model
+flexible boxes / grid
+
+*/
+
+/* andere CSS dingen:
+- media queries  @media
+- custom fonts  @font-face
+- animaties: @keyframes
+
+*/

@@ -60,4 +60,4 @@ In this exercise you will create a web page that will allow the user to see a li
     
 Your HTML is now done! Your page should now look like this:
 
-![Our first webpage](lab1-getting-started.png)
+![Our first webpage](lab1-html.png)

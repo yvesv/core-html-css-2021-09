@@ -1,0 +1,31 @@
+#blokjes {
+	background: lightblue;
+}
+
+#blokjes div {
+	background: #0075c3;
+	margin: 5px;
+	color: white;
+	padding: 20px;
+	float: left;
+}
+.clear {
+	clear: left;
+}
+
+nav {
+	background: lightgreen;
+	float: left;
+	width: 150px;
+}
+section {
+	background: lightskyblue;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: right;
+}
+aside {
+	background: lightpink;
+	float: right;
+	width: 150px;
+}
