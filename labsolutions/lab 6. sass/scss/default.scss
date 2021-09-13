@@ -1,0 +1,26 @@
+body {
+	background: black;
+}
+
+#container {
+	width: 700px;
+	background-color: #222;
+}
+
+.trip {
+	float: left;
+	width: calc(33.333% - 20px);
+}
+
+/* form */
+form label {
+	float: left;
+	clear: left;
+	text-align: right;
+	width: 140px;
+	padding: 12px;
+}
+input,
+textarea {
+	width: 300px;
+}

@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	font-family: "Trebuchet MS", sans-serif;
+	color: silver;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: x-large;
+	text-align: left;
+	padding: 40px 10px 0;
+	margin: 0 0 5px 0;
+	color: white;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav {
+	float: right;
+	margin: 10px 10px 0 0;
+}
+nav ol,
+form ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	float: left;
+	margin: 10px 0 10px 20px;
+}
+nav a {
+	padding: 10px 20px;
+	background-color: #63f453;
+	color: #000;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+nav a:hover {
+	background-color: #1cb70b;
+}
+
+footer {
+	background-color: #2676ea;
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	text-align: right;
+	padding: 40px 10px 0 0;
+	margin-top: 15px;
+	clear: left;
+}
+
+#trips {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+}
+.trip {
+	background: #d34927;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.city {
+	font-weight: bold;
+	margin: 0 5px 0 0;
+}
+
+.date {
+	float: right;
+}
+
+.review {
+	padding: 0 5px;
+}
+
+.rating {
+	text-align: right;
+}
+
+h2 {
+	font-size: 1.2em;
+	padding: 10px;
+	border-left: 15px solid #d34927;
+	border-bottom: 5px solid #d34927;
+	clear: both;
+	color: white;
+}
+
+/* form */
+form li {
+	padding: 5px 10px;
+}
+form label {
+	display: block;
+	color: white;
+}
+input,
+textarea {
+	border: 4px dashed #666;
+	background-color: #aaa;
+	padding: 5px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 1em;
+	outline: none;
+}
+form button {
+	border: 4px solid #444;
+	background-color: #aaa;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-left: 200px;
+	width: 150px;
+}
+
+#btn-add-trip {
+	clear: both;
+	margin: 20px;
+	border: none;
+	padding: 12px;
+	display: block;
+	background: #23b9d3;
+	font-weight: bold;
+	outline: none;
+	width: calc(100% - 40px);
+}

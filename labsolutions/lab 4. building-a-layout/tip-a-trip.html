@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Trips</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/default.css" media="(min-width: 701px)">
+	<link rel="stylesheet" href="css/mobile.css" media="(max-width: 700px)">
+	<script src="scripts/trips.js" defer></script>
+</head>
+
+<body>
+	<div id="container">
+		<nav>
+			<ol>
+				<li><a href="index.html">Trips</a></li>
+				<li><a href="tip-a-trip.html">Tip a trip</a></li>
+			</ol>
+		</nav>
+		
+		<h1>MyTrips</h1>
+
+		<h2>Tip a trip</h2>
+
+		<form action="#" method="post">
+			<ol>
+				<li>
+					<label for="input-location">Where to?</label>
+					<input id="input-location" placeholder="What&#039;s the location of the trip?">
+				</li>
+				<li>
+					<label for="input-when">When should I go?</label>
+					<input id="input-when" placeholder="When is it specially nice there?">
+				</li>
+				<li>
+					<label for="input-reason">Why?</label>
+					<textarea id="input-reason" rows="5" placeholder="Why should I go there?"></textarea>
+				</li>
+				<li><button>Tip it!</button></li>
+			</ol>
+		</form>
+
+		<footer>Waldo &copy; <span id="copyright-year">year</span></footer>
+	</div>
+
+</body>
+
+</html>

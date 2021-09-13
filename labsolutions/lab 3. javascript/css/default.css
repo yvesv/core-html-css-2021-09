@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	font-family: 'Trebuchet MS', sans-serif;
+	background: black;
+	color: silver;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: x-large;
+	text-align: left;
+	padding: 40px 10px 0;
+	margin: 0 0 5px 0;
+	color: white;
+}
+
+footer {
+	background-color: #2676ea;
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	text-align: right;
+	padding: 40px 10px 0 0;
+	margin-top: 15px;
+	clear: left;
+}
+
+#trips {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+}
+.trip {
+	background: #d34927;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.city {
+	font-weight: bold;
+	margin: 0 5px 0 0;
+}
+
+.date {
+	float: right;
+}
+
+.review {
+	padding: 0 5px;
+}
+
+.rating {
+	text-align: right;
+}
+
+#btn-add-trip {
+	clear: both;
+	margin: 20px;
+	border: none;
+	padding: 12px;
+	display: block;
+	background: #23b9d3;
+	font-weight: bold;
+	outline: none;
+	width: calc(100% - 40px);
+}
