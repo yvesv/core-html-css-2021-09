@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Document</title>
 	<style>
@@ -26,39 +27,127 @@
 				background: lightgoldenrodyellow;
 			}
 		}
+
 		@media (min-width: 401px) {
 			#responsive-container {
 				background: lightseagreen;
 			}
 		}
-		@media (orientation: landscape) {
 
-		}
+		@media (orientation: landscape) {}
+
 		@media (prefers-color-scheme: dark) {
 			body {
 				background: #333;
 			}
 		}
+
 		@media (prefers-color-scheme: light) {
 			body {
 				background: #ddd;
 			}
 		}
+
+
+		#blokjes {
+			background: lightgreen;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		#blokjes div {
+			background: #0075c3;
+			margin: 5px;
+			color: white;
+			padding: 20px;
+		}
+
+		#container {
+			display: flex;
+		}
+		nav {
+			background: lightgreen;
+			order: 4;
+		}
+
+		section {
+			background: lightskyblue;
+			flex: 1;
+			order: 2;
+		}
+		.speciaal {
+			background: lightseagreen;
+			flex: 2;
+		}
+
+		aside {
+			background: lightpink;
+			order: 1;
+		}
 	</style>
 </head>
+
 <body>
 
-	
-	<div id="fixed-container">
+
+	<!-- <div id="fixed-container">
 		hoi fixed
 	</div>
 
 	<div id="fluid-container">
-		hoi fluid 
+		hoi fluid
 	</div>
 
 	<div id="responsive-container">
 		hoi responsive
+	</div> -->
+
+	<div id="blokjes">
+		<div>1</div>
+		<div>2<br>l</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+
+	<hr>
+
+	<div id="container">
+
+		<nav>
+			<ol>
+				<li><a href="#start">Start</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ol>
+		</nav>
+
+		<section id="dinges">
+			<article id="content">
+				<h1>Voorpagina Telegraafkop</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+				<p>Dolorem repellendus consequatur minus sunt voluptate tempora minima quam incidunt.</p>
+				<p>Fugit vitae, ullam optio iste consequatur aspernatur iusto laboriosam doloremque!</p>
+				<p>Qui nam provident ullam soluta enim eaque labore vero nostrum.</p>
+				<p>Pariatur non minus natus odit placeat. Maxime harum sit eligendi?</p>
+			</article>
+		</section>
+
+		<section class="speciaal">
+			<article id="content">
+				<h1>Voorpagina Telegraafkop</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+				<p>Dolorem repellendus consequatur minus sunt voluptate tempora minima quam incidunt.</p>
+				<p>Fugit vitae, ullam optio iste consequatur aspernatur iusto laboriosam doloremque!</p>
+				<p>Qui nam provident ullam soluta enim eaque labore vero nostrum.</p>
+				<p>Pariatur non minus natus odit placeat. Maxime harum sit eligendi?</p>
+			</article>
+		</section>
+
+		<aside>verwante informatie / advertenties</aside>
+
 	</div>
 </body>
+
 </html>

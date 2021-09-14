@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style>
+        #container {
+            display: grid;
+            grid-template-rows: 60px 120px;
+            grid-template-columns: 50px 1fr 140px;
+        }
+
+        .eerste {
+            background: lightgreen;
+        }
+        .tweede {
+            background: lightgoldenrodyellow;
+        }
+        .derde {
+            background: lightgray;
+        }
+        .vierde {
+            background: lightblue;
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .vijfde {
+            background: lightpink;
+            grid-column-start: 1; /* inclusief */
+            grid-column-end: 4; /* exclusief */
+            grid-row: 2;
+        }
+        .zesde {
+            background: rgba(0, 255, 100, 0.2);
+            grid-column-start: 2; /* inclusief */
+            grid-column-end: 4; /* exclusief */
+            grid-row: 2;
+        }
+
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            grid-template: 'header header header header' 100px
+                           'nav cont1 cont2 aside' 1fr
+                           'footer footer footer footer' 50px / 150px 1fr 1fr 100px;
+            display: grid;
+        }
+
+
+        header {
+            background: lightblue;
+            grid-area: header;
+        }
+        nav {
+			background: lightgreen;
+            grid-area: nav;
+		}
+		section {
+			background: lightskyblue;
+            grid-area: cont1;
+		}
+		.speciaal {
+			background: lightseagreen;
+            grid-area: cont2;
+		}
+		aside {
+			background: lightpink;
+            grid-area: aside;
+		}
+        footer {
+            background: lightgray;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <div id="container">
+        <div class="eerste">eerste</div>
+        <div class="tweede">tweede</div>
+        <div class="derde">derde</div>
+        <div class="vierde">vierde</div>
+        <div class="vijfde">vijfdeqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+        <div class="zesde">zesde</div>
+    </div> -->
+
+
+    <header>
+        Logo met slogan
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ol>
+    </nav>
+
+    <section id="dinges">
+        <article id="content">
+            <h1>Voorpagina Telegraafkop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+            <p>Dolorem repellendus consequatur minus sunt voluptate tempora minima quam incidunt.</p>
+            <p>Fugit vitae, ullam optio iste consequatur aspernatur iusto laboriosam doloremque!</p>
+            <p>Qui nam provident ullam soluta enim eaque labore vero nostrum.</p>
+            <p>Pariatur non minus natus odit placeat. Maxime harum sit eligendi?</p>
+        </article>
+    </section>
+
+    <section class="speciaal">
+        <article id="content">
+            <h1>Voorpagina Telegraafkop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+            <p>Dolorem repellendus consequatur minus sunt voluptate tempora minima quam incidunt.</p>
+            <p>Fugit vitae, ullam optio iste consequatur aspernatur iusto laboriosam doloremque!</p>
+            <p>Qui nam provident ullam soluta enim eaque labore vero nostrum.</p>
+            <p>Pariatur non minus natus odit placeat. Maxime harum sit eligendi?</p>
+        </article>
+    </section>
+
+    <aside>verwante informatie / advertenties</aside>
+
+    <footer>&copy; JP ten Berge 2021</footer>
+
+</body>
+</html>
