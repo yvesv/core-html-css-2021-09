@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FONTS UNITS</title>
+    <style>
+        /* A11Y */
+
+        .px {
+            /* niet genoeg a11y is */
+            font-size: 14px;
+            /* absoluut 14 pixels */
+        }
+
+        .em {
+            font-size: 1.2em;
+            /* relatief t.o.v. parent element*/
+        }
+
+        .rem {
+            font-size: 1.2rem;
+            /* relatief t.o.v. root (browserinstelling) */
+        }
+
+        .vw {
+            /* viewport width */
+            /* niet heel erg a11y. je hoeft hem niet te mijden, hij is niet verboden, hij is gewoon voor specifieke non-a11y doeleinden */
+            font-size: 2vw;
+        }
+
+        ul {
+            font-size: 0.8em;
+        }
+
+        .breakthrough {
+            font-size: 1.5rem;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, asperiores.</p>
+    <p class="em">Deserunt earum veritatis fugiat dolores illo, expedita fugit blanditiis quibusdam!</p>
+    <p class="rem">Molestiae voluptatum esse velit amet quasi sint, distinctio odio reiciendis.</p>
+    <p class="vw">Illum cumque nihil fugit veritatis ipsa laudantium laboriosam nostrum quisquam!</p>
+
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Libero, vero doloribus.</li>
+        <li>Id, corporis ipsum?
+
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Libero, vero doloribus.</li>
+                <li>Id, corporis ipsum?
+                    <ul class="breakthrough">
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Libero, vero doloribus.</li>
+                        <li>Id, corporis ipsum?
+
+                            <ul>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Libero, vero doloribus.</li>
+                                <li>Id, corporis ipsum?
+                                    <ul>
+                                        <li>Lorem, ipsum dolor.</li>
+                                        <li>Libero, vero doloribus.</li>
+                                        <li>Id, corporis ipsum?</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+
+</body>
+
+</html>

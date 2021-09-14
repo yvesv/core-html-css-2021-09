@@ -1,0 +1,26 @@
+{
+  "name": "core-html-css-2021-09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPtenBerge/core-html-css-2021-09.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPtenBerge/core-html-css-2021-09/issues"
+  },
+  "homepage": "https://github.com/JPtenBerge/core-html-css-2021-09#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.40.1"
+  },
+  "type": "module"
+}

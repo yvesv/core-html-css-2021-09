@@ -1,0 +1,41 @@
+nav ol {
+  list-style: square;
+}
+
+nav a {
+  background: #004080;
+  color: white;
+  /* comment */
+}
+nav a:hover {
+  background: #4dff4d;
+  color: black;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  font-family: Verdana;
+}
+nav a ding {
+  background: yellow;
+}
+
+h1 {
+  font-variant: small-caps;
+  font-size: 1.4rem;
+  font-family: Verdana;
+}
+
+.col-lg-1 {
+  margin-left: 20px;
+}
+
+.col-lg-2 {
+  margin-left: 40px;
+}
+
+.col-lg-3 {
+  margin-left: 60px;
+}
+
+.col-lg-4 {
+  margin-left: 80px;
+}

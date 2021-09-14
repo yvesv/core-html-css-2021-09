@@ -1,0 +1,42 @@
+
+
+$base-color1: green;
+$base-color2: blue;
+
+@mixin smallcaps($fontsize: 1.4rem) {
+    font-variant: small-caps;
+    font-size: $fontsize;
+    font-family: Verdana;
+}
+
+nav ol {
+    list-style: square;
+}
+nav a {
+    background: mix($base-color1, $base-color2);
+    color: white;
+
+    // nested styles
+    /* comment */
+    &:hover {
+        background: lighten($base-color1, 40%);
+        color: black;
+
+        @include smallcaps(1.2rem);
+    }
+
+    ding {
+        background: yellow;
+    }
+}
+
+h1 {
+    @include smallcaps();
+}
+
+// grid systems (Bootstrap 4)
+@for $var from 1 to 5 {
+    .col-lg-#{$var} {
+        margin-left: $var * 20px;
+    }
+}
