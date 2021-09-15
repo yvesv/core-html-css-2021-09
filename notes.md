@@ -133,3 +133,124 @@ Responsive layout: capabilities van het medium querien
 @media
 <link media="">
 
+## npm tools
+
+buildtools:
+- grunt (configureren - JSON)
+- gulp  (programmeren)
+
+specifieke build tools, zogeheten module bundlers:
+- Rollup
+- Parcel (zero config just works)
+- (heeeel nieuw) Rome
+- webpack (configureren)
+
+Testtools: karma protractor jasmine mocha chai sinon jest
+
+## Opmaakachtige zaken in HTML
+
+```html
+// buttons waren prima
+<button class="btn btn-primary">
+
+// grid system begon ok
+<div class="col-12">
+
+// maar werd toen dit
+<div class="col-xs-12 col-sm-8 col-lg-4 col-xl-4">
+```
+
+## CSS frameworks
+
+Handig om snel iets leuks smoelend neer te zetten, vooral voor:
+
+- intranet
+- proof of concepts
+- afstudeer-/priveprojectjes
+
+## Content Delivery Network
+
+voordelen?
+- hoge availability
+- snelheid
+
+nadelen?
+- wat als het offline is?
+- ze kunnen het aanpassen/verwijderen
+- security: over het algemeen zal een bank/verzekeraar/... een CDN niet zomaar gebruiken.
+  => misschien met een contract?
+  => misschien een private CDN
+
+cdn.nn.nl
+
+
+
+```html
+<link rel="stylesheet" href="default.css">
+...nog 20 <link>s...
+<link rel="stylesheet" href="default.css">
+<script src="script.js"></script>
+...nog 80 scripts...
+<script src="script.js"></script>
+```
+
+komt nogal DDoS'erig over als deze allemaal in dezelfde milliseconde worden opgevraagd.
+
+browser stuurt ~6-10 requests naar dezelfde hostname
+
+s22.facebook.com
+
+## Sass: Syntactically Awesome StyleSheets
+
+SCSS: Super Cascading StyleSheets
+
+
+```sass
+body {
+	font-size: 1rem;
+	color: black;
+}
+td
+	padding: 7px
+```
+
+Less
+```less
+body {
+	font-size: 1rem;
+	color: black;
+}
+td {
+	padding: 7px;
+}
+```
+
+sass CLI
+vermijden for life: node gyp  pregyp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
