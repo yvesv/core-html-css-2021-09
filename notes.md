@@ -247,7 +247,7 @@ vermijden for life: node gyp  pregyp
 
 ## CSS3
 
-```css
+```scss
 @mixin border-radius($radius) {
 	-webkit-border-radius: 10px; // experimentele variant
 	-o-border-radius: 10px; // experimentele variant
