@@ -160,6 +160,8 @@ Testtools: karma protractor jasmine mocha chai sinon jest
 <div class="col-xs-12 col-sm-8 col-lg-4 col-xl-4">
 ```
 
+Functional CSS
+
 ## CSS frameworks
 
 Handig om snel iets leuks smoelend neer te zetten, vooral voor:
