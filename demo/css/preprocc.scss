@@ -1,12 +1,41 @@
 
+// please don't do this
+// body {
+//     transition: 4s ease all;
+// }
+// body:hover {
+//     transform: rotate(360deg);
+// }
+
+// @font-face {
+//     font-family: face;
+//     src: url();
+// }
+
+@keyframes blinkert {
+    from {
+        opacity: 0;
+        font-size: 1rem;
+        color: black;
+    }
+    to {
+        opacity: 1;
+        font-size: 2rem;
+        color: red;
+    }
+}
+
+blink {
+    animation: blinkert 0.5s infinite alternate;
+}
 
 $base-color1: green;
 $base-color2: blue;
 
 @mixin smallcaps($fontsize: 1.4rem) {
-    font-variant: small-caps;
+    // font-variant: small-caps;
     font-size: $fontsize;
-    font-family: Verdana;
+    font-family: Lobster;
 }
 
 nav ol {
@@ -15,14 +44,22 @@ nav ol {
 nav a {
     background: mix($base-color1, $base-color2);
     color: white;
+    border-radius: 1.2rem 0.5rem 3rem 1rem;
+    text-decoration: none;
+    padding: 0.6rem;
+    display: block;
+    margin: 0.6rem;
+    transition: 3s ease all;
 
     // nested styles
     /* comment */
     &:hover {
         background: lighten($base-color1, 40%);
         color: black;
-
-        @include smallcaps(1.2rem);
+        border-radius: 50%;
+        box-shadow: -1.1rem -1.1rem 1.4rem 0.8rem purple;
+        
+        // transform: rotate(10deg) scale(0.5);
     }
 
     ding {

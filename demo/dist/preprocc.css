@@ -1,3 +1,19 @@
+@keyframes blinkert {
+  from {
+    opacity: 0;
+    font-size: 1rem;
+    color: black;
+  }
+  to {
+    opacity: 1;
+    font-size: 2rem;
+    color: red;
+  }
+}
+blink {
+  animation: blinkert 0.5s infinite alternate;
+}
+
 nav ol {
   list-style: square;
 }
@@ -5,23 +21,27 @@ nav ol {
 nav a {
   background: #004080;
   color: white;
+  border-radius: 1.2rem 0.5rem 3rem 1rem;
+  text-decoration: none;
+  padding: 0.6rem;
+  display: block;
+  margin: 0.6rem;
+  transition: 3s ease all;
   /* comment */
 }
 nav a:hover {
   background: #4dff4d;
   color: black;
-  font-variant: small-caps;
-  font-size: 1.2rem;
-  font-family: Verdana;
+  border-radius: 50%;
+  box-shadow: -1.1rem -1.1rem 1.4rem 0.8rem purple;
 }
 nav a ding {
   background: yellow;
 }
 
 h1 {
-  font-variant: small-caps;
   font-size: 1.4rem;
-  font-family: Verdana;
+  font-family: Lobster;
 }
 
 .col-lg-1 {
