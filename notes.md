@@ -61,15 +61,15 @@ JS
 
 
 verboden lijst van elementen:
-- <center>
-- <font>
-- <blink>
+- `<center>`
+- `<font>`
+- `<blink>`
 
 minder toffe lijst van elementen:
-- <b> <i> <u>
+- `<b> <i> <u>`
 
 beter:
-<strong> <em>
+`<strong> <em>`
 
 
 div - block element
@@ -88,7 +88,9 @@ voordelen van jQuery:
 - AJAX-requests   - fetch()
 - cross-browser c14y
 
+```html
 <button id="btn"></button>
+```
 
 
 ```js
@@ -131,7 +133,9 @@ Fluid layout/Elastic layout: 80%  80vw  80vh
 Responsive layout: capabilities van het medium querien
 
 @media
+```html
 <link media="">
+```
 
 ## npm tools
 
