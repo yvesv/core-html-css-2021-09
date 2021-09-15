@@ -234,29 +234,98 @@ td {
 sass CLI
 vermijden for life: node gyp  pregyp
 
+## Internals van de browser
+
+- rendering engine  (HTML/CSS renderen): wat je visueel ziet
+  => WebKit
+  => GreaseMonkey  
+
+- JavaScript engine
+  => V8
+  => Chakra / ChakraCore
+  => SpiderMonkey
+
+## CSS3
+
+```css
+@mixin border-radius($radius) {
+	-webkit-border-radius: 10px; // experimentele variant
+	-o-border-radius: 10px; // experimentele variant
+	-moz-border-radius: 10px; // experimentele variant
+	-ms-border-radius: 10px; // experimentele variant
+	-mso-border-radius: 10px; // experimentele variant
+	-khtml-border-radius: 10px; // experimentele variant
+	border-radius: 10px;
+}
+@include border-radius(20px);
+```
+
+transition
+animaties
+transform
+custom fonts
+
+CSS methodologies
+
+- Atomic CSS  D(b) P(20px)
+- BEM
+- SMACSS
+- OOCSS
+
+BEM: Block Element Modifier
+
+```css
+.block__element--modifier {
+	
+}
+```
+
+- traceerbaarheid/leesbaarheid: waar wordt de CSS selector gebruikt
+- veel minder conflicten
 
 
+```html
+<site-visitors>
+	
+</site-visitors>
 
+<div class="site-visitors site-visitors--alert">
+	<svg class="graph graph--alert"></svg>
+</div>
+```
 
+```css
+.graph--alert {
 
+}
 
+.alert {
+	border-radius: 2rem;
+}
+```
 
+Angular, Vue, React
+- componentgebaseerde manier van ontwikkelen
 
+React microcomponents:
 
+ListComponent
+```html
+<ul>
+	<ListItemComponent Item="item" />
+</ul>
+```
 
+```html
+<button class="btn btn-success">
+```
 
+## Next steps
 
+- Web Components
+- JS testen  - karma protractor mocha chai sinon
+- Node.js => Deno
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+frameworks:
+- Web Assembly-frameworks
+- Svelte
