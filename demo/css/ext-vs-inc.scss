@@ -1,0 +1,24 @@
+@mixin iets {
+    background: black;
+    color: white;
+}
+
+.dinges {
+    background: black;
+    color: white;
+}
+
+
+h1 {
+    @include iets();
+}
+p {
+    @include iets();
+}
+
+ul {
+    @extend .dinges;
+}
+td {
+    @extend .dinges;
+}
